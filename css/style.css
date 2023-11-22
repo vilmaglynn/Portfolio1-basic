@@ -5,30 +5,34 @@
 /* header */
 
 
-header{
-background-color: hsl(0,0%,96%);
-}
-
-.fa-code{
+.hero-title > .fa-code{
 	color: blueviolet;
+	font-size: 30px;
+	transition: 1s linear;
 		}
+
+.hero-title >.fa-code:hover{
+	transform: scale(1.5,1.5);;
+}
 /* nav */
 .nav-container{
-display: flex;
-align-items: center;
-justify-content: center;
 position: sticky;
 top: 0px;
 z-index: 199;
 background-color: rgb(19,46,85);
-color: white;
+color: rgb(200, 149, 248);
 padding: 20px;
 }
 
 .nav-container li{
 	text-align: center;
+	transition: 1s linear;
 }
 
+.nav-container li:hover {
+	color: #1cf;
+	cursor: pointer;
+}
 /* hero area */
 /* hero background image */
 .bgimage {
@@ -50,75 +54,81 @@ padding: 20px;
     background-color: rgba(0, 0, 0, 0.133);
 	color:white;	
 }
-.hero_title > span,
-.hero_desc {
-	color: rgb(253, 253, 186)
+
+.hero-title > span{
+	color: rgb(253, 253, 186);
 }
 
-
-
-/* .hero-banner{
-background-image: linear-gradient(
-			rgba(26, 50, 85, 0.4),
-			rgba(0, 0, 0, 0.9),
-			rgba(0, 0, 0, 0.7),
-			rgba(37, 193, 237, 0.4)
-		  ),
-		  url(/images/html-system-website-concept.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	padding: 20px;
-} */
+.hero-desc{
+	color:#1cf;
+}
 
 .image-container{
 	height: 100vh;
-}
-
-.image-container > h1 > span {
-	font-size: 2.5rem;
 }
 
 
 /*=================================================
 /* all main sections */
 
+/* wrapper holding all main sections */
+.page-wrapper{
+	margin: 0px 5%;
+}
 
+/* about me */
+/* avatar image  */
+img{
+	max-height: 200px;
+	padding: 20px;
+	margin: 0 auto
+	
+}
+
+
+.about{
+	background-color: hsl(0,0%,96%);
+	padding: 50px;
+	text-align: center;
+}
+
+.about div p{
+	text-align: left;
+}
 .about div > p > span{
 	font-size: 1.5rem;
 	color: rgb(16, 94, 136);
 	font-weight: bolder;	
 }
 
-img{
-	max-height: 200px;
-	padding: 20px;
-
+.about > div {
+	margin: 0 15%;
 }
 
-/* wrapper holding all main sections */
-.page-wrapper{
-	margin: 0px 5%;
+/* skills area */
+.fa-solid,
+.fa-brands {
+	font-size: 50px;
+	margin-bottom: 5px;
 }
 
-
-/* about me */
-.about{
-	background-color: hsl(0,0%,96%);
-	height: 100vh;
-	padding: 20px;
+.skills{
+display: flex;
+gap: 50px;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
 
+.skills li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+  
 /* work grid section */
-
-
 .work-grid{	
 	transition: width 0.5s , height 0.5s ;
-	margin: 0px 5%;
 	display: grid;
 	grid-column-gap: 10px; /* Add a 10px gap between columns */
   grid-row-gap: 20px; /* Add a 20px gap between rows */
@@ -167,11 +177,15 @@ background-image: url(/images/Balloon.jpeg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 5px;
 	align-content: end;
-
 	border-radius: 10px;
-  }
+	transition: 0.5s linear;
+
+}
+.categoryGridArea:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
 
 .heading {
 	background-color: rgba(0,0,0,0.7);
@@ -191,9 +205,21 @@ background-image: url(/images/Balloon.jpeg);
 	flex-direction: column;
 }
 
-.fa-brands{
-	font-size: 1rem;
-}
+.social{
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	}
+	
+.social li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		
+	  }
+
 .fa-linkedin{
 color: hsl(210,88%,40%);
 }
@@ -201,9 +227,7 @@ color: hsl(210,88%,40%);
 /* Back to top */
 .top{
 	position: sticky;
-	bottom: 0;
-	left:0;
-	margin: 0 auto;
+	bottom: 0;	
 }
 
 .fa-circle-chevron-up{
@@ -221,10 +245,8 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-/* background-color: hsl(0,0%,96%); */
 background-color: #2b2b2d;
 text-align: center;
 height: 20vh;
 color: white;
-
 }
