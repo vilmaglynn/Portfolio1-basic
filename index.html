@@ -8,69 +8,129 @@
   <title>Vilma Hernandez // Front-end Developer</title>
   <link rel="stylesheet" href="./css/generalise.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!--Header / nav / hero-->
   <header>
+
+    <!-- navigation -->
     <nav class="nav-container">
       <ul>
         <li><a href="#about">About me</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact me</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="./documents/CV_2022 07.13.25.docx" download="Resume">Download Resume</a></li>
       </ul>
     </nav>
 
-    <!-- intro -->
-    <section class="intro">
+    <!-- hero & intro
+    <section class="hero-banner">
       <div class="image-container">
-        <img src="./images/profileimage2.JPG" alt="avatar picture of Vilma">
+        <h1>Hello! I'm <br> <span>Vilma Hernandez</span></h1>
+        <img class="background"> <img>
       </div>
-      <div class="intro-summary page-section">
-        <h1>Hello! I'm <span>Vilma Hernandez</span></h1>
-        <p>A <span>Front-end Developer</span> enthusiast looking for her entry level position. Positive and highly
-          ambitious
-          professional seeking for an opportunity to develop, eager to learn and
-          willing to be challenged.</p>
+    </section> -->
+
+    <!-- main banner -->
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="hero-text">
+            <h2 class="hero_title">
+              <i class="fa-solid fa-code fa-beat"></i>
+              Hello! <br> I'm <span>Vilma
+                Hernandez</span>
+            </h2>
+            <p class="hero_desc">Front-End Software Developer / Javascript enthusiast </p>
+          </div>
+        </div>
       </div>
     </section>
+
   </header>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
+    <section class="page-section about" id="about">
       <h2>About Me</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vero eaque sunt excepturi omnis quibusdam
-        veniam error minus quaerat suscipit qui, repellat neque veritatis inventore, quis necessitatibus, sapiente
-        reiciendis voluptatum.
-        Nemo omnis ad eius perspiciatis ab dignissimos iusto. Obcaecati quas quidem sequi, assumenda qui impedit labore,
-        quis architecto corporis, ut optio! Enim unde animi labore. Excepturi fuga laboriosam optio hic?</p>
+
+
+      <img src="./images/avatar.png" alt="avatar picture of Vilma">
+      <div>
+        <p><span>lorem</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, sint? Et architecto ipsa
+          veritatis unde? Labore voluptatum debitis, alias dicta inventore aliquid, tempore amet quas soluta rem nisi!
+          Quod, molestias.
+          Nesciunt incidunt repellat pariatur aliquam rem dolorum, tenetur accusantium soluta possimus delectus eius
+          fugiat libero accusamus nobis quae architecto neque ad recusandae! Adipisci enim velit a ducimus porro
+          asperiores dolorum.</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dolor at molestias consectetur ipsa culpa
+          ipsam,
+          libero distinctio velit necessitatibus veniam commodi nesciunt porro suscipit optio ipsum. Laboriosam,
+          voluptatum autem?
+          Perspiciatis architecto cum quibusdam labore! Distinctio aliquam reiciendis sint vitae similique adipisci
+          odit,
+          nam perferendis atque cumque quisquam accusamus alias eum minima temporibus sit neque! Iste sapiente
+          necessitatibus qui provident.</p>
+      </div>
+
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="page-section work-grid" id="work">
+      <h2 id="title">Work</h2>
+      <div id="project-1" class="categoryGridArea">
+        <div class="heading"><a href="https://codepen.io/vilmaglynn/pen/powKyBm" target="_blank">Balloon -CSS</a></div>
+      </div>
+      <div id="project-2" class="categoryGridArea">
+        <div class="heading"><a href="https://codepen.io/vilmaglynn/pen/gORgyaa" target="_blank">FaultyStreetLamp -
+            CSS</a></div>
+      </div>
+      <div id="project-3" class="categoryGridArea">
+        <div class="heading"><a href="https://codepen.io/vilmaglynn/pen/ExWmqOB">Ladybird -CSS</a> </div>
+      </div>
+      <div id="project-4" class="categoryGridArea">
+        <div class="heading"> <a href="https://codepen.io/vilmaglynn/pen/QWdqVjZ">Buttons -CSS</a></div>
+      </div>
+      <div id="project-5" class="categoryGridArea">
+        <div class="heading"><a href="https://codepen.io/vilmaglynn/pen/yLjNyRY">Stopwatch-CSS/JS</a></div>
+      </div>
+      <div id="project-6" class="categoryGridArea">
+        <div class="heading"><a href="https://codepen.io/vilmaglynn/pen/dyWXvxX">Dot&Dashes-CSS</a></div>
+      </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section contact " id="contact">
       <h2>Contact Me</h2>
+
       <ul>
         <li>07970469698</li>
-        <li>vilmaglynn@hotmail.com</li>
-        <li><a href="https://www.linkedin.com/in/vilmahernandez-33566685" target="_blank"
-            class="fa fa-linkedin"></a>linkedin
-        </li>
-        <li><a href="https://github.com/vilmaglynn" target="_blank" class="fa fa-github"></a>github</li>
-        <li><a href="https://codepen.io/vilmaglynn" target="_blank" class="fa fa-codepen"></a>codepen</li>
+        <li> <a href="mailto:vilmaglynn@hotmail.com"> vilmaglynn@hotmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/vilmahernandez-33566685" target="_blank" class="fa-brands fa-linkedin">
+            linkedin</a></li>
+        <li><a href="https://github.com/vilmaglynn" target="_blank" class="fa-brands fa-github"> github</a> </li>
+        <li><a href="https://codepen.io/vilmaglynn" target="_blank" class="fa-brands fa-codepen"> codepen</a></li>
       </ul>
+
     </section>
-    <div class="top">
-      <span> <a href="#"> Back to top &#8593;</a></span>
-    </div>
   </main>
+  <div class="top">
+    <span> <a href="#" class="fa-solid fa-circle-chevron-up"> </a></span>
+  </div>
+  <footer>
+    <p> &copy; Created by Vilma Hernandez <span>&#128153;</span> </p>
+  </footer>
+
+
+
 
 </body>
 

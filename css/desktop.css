@@ -1,0 +1,139 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/* text css above hero image*/
+.bgimage {
+	height: 100vh;;
+		background-size:cover;
+		background-position: center;
+		position:relative;
+	}
+	.hero_title {
+		font-size: 3rem;
+	}
+	.hero_desc {
+		font-size: 1.2rem;
+	}
+	
+	.hero-text {
+		position: absolute;
+		padding: 20px;
+		text-align: center;
+		top: 50%;
+		left:300px;
+	  transform: translate(-50%, -50%);
+	
+	}
+	.fa-code{
+		font-size: 50px;
+			}
+
+	.nav-container{
+			justify-content: space-around;
+	}
+	.nav-container ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	.work-grid{	
+		margin: 0px 5%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 200px 200px 200px 200px;
+		grid-template-areas: 
+	"work work"
+	"project1 project2"
+	"project3 project4"
+	"project5 project6"
+	}
+	
+	#work{
+		grid-area: project1;
+	}
+	#project-1{
+	grid-area: project1;
+	}
+	#project-2{
+		grid-area: project2;
+		}
+	#project-3{
+		grid-area: project3;
+	}
+	#project-4{
+		grid-area: project4;
+	}
+	#project-5{
+		grid-area: project5;
+	}
+	#project-6{
+		grid-area: project6;
+	
+	}
+	}
+	
+
+	
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+/* work grid section */
+
+/* about me */
+.about{
+	background-color: hsl(0,0%,96%);
+
+	
+}
+
+
+
+img{
+	max-height: 300px;
+}
+/* work */
+.work-grid{	
+	margin: 0px 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50px 200px 200px;
+	grid-template-areas: 
+"work work work"
+"project1 project2 project3"
+"project4 project5 project6"
+}
+
+#work{
+	grid-area: project1;
+}
+#project-1{
+grid-area: project1;
+}
+#project-2{
+	grid-area: project2;
+
+}
+#project-3{
+	grid-area: project3;
+}
+#project-4{
+	grid-area: project4;
+}
+#project-5{
+	grid-area: project5;
+}
+#project-6{
+	grid-area: project6;
+
+}
+
+
+
+}
+
+
+

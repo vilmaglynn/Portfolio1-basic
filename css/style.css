@@ -1,8 +1,18 @@
-/* mobile */
-img{
-	display: none;
+/* MOBILE style (main)*/
+
+/*=================================================
+/* header -nav and hero*/
+/* header */
+
+
+header{
+background-color: hsl(0,0%,96%);
 }
 
+.fa-code{
+	color: blueviolet;
+		}
+/* nav */
 .nav-container{
 display: flex;
 align-items: center;
@@ -10,23 +20,211 @@ justify-content: center;
 position: sticky;
 top: 0px;
 z-index: 199;
-background-color: rgb(255, 246, 249);
-padding: 10px;
+background-color: rgb(19,46,85);
+color: white;
+padding: 20px;
+}
+
+.nav-container li{
+	text-align: center;
+}
+
+/* hero area */
+/* hero background image */
+.bgimage {
+    background-image: linear-gradient(
+			rgba(26, 50, 85, 0.4),
+			rgba(52, 52, 52, 0.9),
+			rgba(36, 36, 36, 0.7),
+			rgba(37, 193, 237, 0.4)
+		  ),
+		  url(/images/matrixbackground.jpg);
+    background-size:cover;
+	background-position: center;
+    position:relative;
+}
+
+.hero-text {
+	padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.133);
+	color:white;	
+}
+.hero_title > span,
+.hero_desc {
+	color: rgb(253, 253, 186)
 }
 
 
-.page-section,
-.page-section h2,
-.page-section ul li{
+
+/* .hero-banner{
+background-image: linear-gradient(
+			rgba(26, 50, 85, 0.4),
+			rgba(0, 0, 0, 0.9),
+			rgba(0, 0, 0, 0.7),
+			rgba(37, 193, 237, 0.4)
+		  ),
+		  url(/images/html-system-website-concept.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	padding: 20px;
+} */
+
+.image-container{
+	height: 100vh;
+}
+
+.image-container > h1 > span {
+	font-size: 2.5rem;
+}
+
+
+/*=================================================
+/* all main sections */
+
+
+.about div > p > span{
+	font-size: 1.5rem;
+	color: rgb(16, 94, 136);
+	font-weight: bolder;	
+}
+
+img{
+	max-height: 200px;
+	padding: 20px;
+
+}
+
+/* wrapper holding all main sections */
+.page-wrapper{
+	margin: 0px 5%;
+}
+
+
+/* about me */
+.about{
+	background-color: hsl(0,0%,96%);
+	height: 100vh;
+	padding: 20px;
+}
+
+/* work grid section */
+
+
+.work-grid{	
+	transition: width 0.5s , height 0.5s ;
+	margin: 0px 5%;
+	display: grid;
+	grid-column-gap: 10px; /* Add a 10px gap between columns */
+  grid-row-gap: 20px; /* Add a 20px gap between rows */
+	grid-template-columns: 1fr;
+	grid-template-rows: 50px 200px 200px 200px 200px 200px 200px ;
+	grid-template-areas: 
+"work"
+"project1"
+"project2"
+"project3"
+"project4"
+"project5"
+"project6"
+}
+
+#work{
+	grid-area: project1;
+
+}
+#project-1{
+grid-area: project1;
+background-image: url(/images/Balloon.jpeg);
+}
+#project-2{
+	grid-area: project2;
+	background-image: url(/images/street-lamp.png);
+}
+#project-3{
+	grid-area: project3;
+	background-image: url(/images/ladybird-\ css.png);
+}
+#project-4{
+	grid-area: project4;
+	background-image: url(/images/Buttons-CSS.png);
+}
+#project-5{
+	grid-area: project5;
+	background-image: url(/images/stopwatch-CSSJS.png);
+}
+#project-6{
+	grid-area: project6;
+	background-image: url(/images/dotsdashes-CSS.png);
+}
+
+.categoryGridArea {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 5px;
+	align-content: end;
+
+	border-radius: 10px;
+  }
+
+.heading {
+	background-color: rgba(0,0,0,0.7);
+	padding: 15px;
+	height: 25px;
+	color: white;
+	font-size: 1rem;
+	border-bottom: 5px solid black;
+  }
+
+/* Contact me & social links */
+.contact{
+	padding: 40px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
-.intro,
-.page-wrapper{
-	max-width: 60vmax;
+.fa-brands{
+	font-size: 1rem;
+}
+.fa-linkedin{
+color: hsl(210,88%,40%);
+}
+
+/* Back to top */
+.top{
+	position: sticky;
+	bottom: 0;
+	left:0;
 	margin: 0 auto;
-	padding: 20px; 
+}
+
+.fa-circle-chevron-up{
+	color: #2b2b2d;
+	font-size: 40px;
+	background-color: white;
+	border-radius: 50%;
+	}
+	
+
+	/*=================================================
+/* footer */
+footer{
+	display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/* background-color: hsl(0,0%,96%); */
+background-color: #2b2b2d;
+text-align: center;
+height: 20vh;
+color: white;
+
 }

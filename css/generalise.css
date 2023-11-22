@@ -10,20 +10,21 @@ body {
   min-height: 100vh; 
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
+} */
+
+
+h2{
+	font-size: 2rem;
 }
 
-p {
-  margin: 0;
-}
-
-/* Because we us <ul>s for lists that we don't always want bulletted. */
+/*Because we us <ul>s for lists that we don't always want bulletted. */
 ul {
   list-style: none;
   padding-left: 0;
