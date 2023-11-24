@@ -2,9 +2,8 @@
 Created with HTML CSS only
 
 
-    ```md
-    ![alt text](assets/portfolio_view.png)
-    ```
+    ![portfolio image](assets/portfolio_view.png)
+
 
 ## Description
 
