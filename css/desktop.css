@@ -13,22 +13,47 @@
 		background-position: center;
 		position:relative;
 	}
-	.hero_title {
+
+.overlay-image {
+	transition: 2s linear;
+	display: block;
+	position: absolute;
+	top: 10%;
+	right: 5%;	
+	max-height: 300px;
+	filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.859));
+	  }
+
+.overlay-image:hover{
+	filter: drop-shadow(15px 15px 15px rgba(213, 23, 238, 0.677));
+
+}
+
+
+.hero-container {
+	transition: 2s linear;
+	width: 60%;	
+	position: absolute;
+	padding: 20px;
+	top: 20%;
+	left: -10px;
+	/* transform: translate(-50%, -50%); */
+	box-shadow: 0px 10px 30px #1cf	;
+}
+
+.hero-container:hover{
+	box-shadow: 0px 10px 30px #1cf	;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.859);
+}
+.hero_title {
 		font-size: 3rem;
 	}
 	.hero_desc {
 		font-size: 1.2rem;
 	}
 	
-	.hero-text {
-		position: absolute;
-		padding: 20px;
-		text-align: center;
-		top: 50%;
-		left:300px;
-	  transform: translate(-50%, -50%);
-	
-	}
+
+
 	.fa-code{
 		font-size: 40px;
 			}
@@ -49,12 +74,14 @@
 		margin: 0px 5%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50px 200px 200px 200px;
+		grid-template-rows: 50px 200px 200px 200px 200px 200px 200px;
 		grid-template-areas: 
 	"work work"
-	"project1 project2"
-	"project3 project4"
-	"project5 project6"
+	"project1 project1"
+	"project1 project1"
+	"project2 project3"
+	"project4 project5"
+	"project6 project7"
 	}
 	
 	#work{
@@ -88,14 +115,16 @@
 /*========================================================
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+	
+	.overlay-image{
+		max-height: 400px;
+	}
 
 /* work grid section */
 
 /* about me */
 
-
-img{
+.about img{
 	max-height: 300px;
 }
 /* work */
@@ -103,10 +132,11 @@ img{
 	margin: 0px 5%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 50px 200px 200px;
+	grid-template-rows: 50px 200px 200px 200px;
 	grid-template-areas: 
 "work work work"
-"project1 project2 project3"
+"project1 project1 project2 "
+"project1 project1 project3"
 "project4 project5 project6"
 }
 
