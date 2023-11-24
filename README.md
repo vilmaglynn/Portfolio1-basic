@@ -2,7 +2,7 @@
 Created with HTML CSS only
 
 
-    ![portfolio image]([assets/portfolio_view.png](https://github.com/vilmaglynn/portfolio1-basic/blob/main/assets/portfolio_view.png))
+    ![portfolio image](https://github.com/vilmaglynn/portfolio1-basic/blob/main/assets/portfolio_view.png)
 
 
 ## Description
