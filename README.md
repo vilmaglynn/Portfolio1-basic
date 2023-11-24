@@ -2,6 +2,10 @@
 Created with HTML CSS only
 
 
+    ```md
+    ![alt text](assets/portfolio_view.png)
+    ```
+
 ## Description
 
 A very basic Portfolio created for Front-end Developer Bootcamp EDX challenge and homework with the purpose of learning to code.
