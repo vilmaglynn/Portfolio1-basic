@@ -52,7 +52,7 @@ padding: 20px;
 			rgba(36, 36, 36, 0.7),
 			rgba(37, 193, 237, 0.4)
 		  ),
-		  url(/images/matrixbackground.jpg);
+		  url(../images/matrixbackground.jpg);
     background-size:cover;
 	background-position: center;
     position:relative;
@@ -171,27 +171,27 @@ justify-content: space-evenly;
 }
 #project-1{
 grid-area: project1;
-background-image: url(/images/Balloon.jpeg);
+background-image: url(../images/balloon.jpeg);
 }
 #project-2{
 	grid-area: project2;
-	background-image: url(/images/street-lamp.png);
+	background-image: url(../images/streetlamp.png);
 }
 #project-3{
 	grid-area: project3;
-	background-image: url(/images/ladybird-\ css.png);
+	background-image: url(../images/ladybirdcss.png);
 }
 #project-4{
 	grid-area: project4;
-	background-image: url(/images/Buttons-CSS.png);
+	background-image: url(../images/buttonsCSS.png);
 }
 #project-5{
 	grid-area: project5;
-	background-image: url(/images/stopwatch-CSSJS.png);
+	background-image: url(../images/stopwatch-CSSJS.png);
 }
 #project-6{
 	grid-area: project6;
-	background-image: url(/images/dotsdashes-CSS.png);
+	background-image: url(../images/dotsdashesCSS.png);
 }
 
 .categoryGridArea {
