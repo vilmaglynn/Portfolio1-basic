@@ -58,12 +58,6 @@
 		font-size: 1.2rem;
 	}
 	
-
-
-	.fa-code{
-		font-size: 40px;
-			}
-
 	.nav-container{
 		display: flex;
 		justify-content:flex-end;
@@ -127,7 +121,6 @@
 	}
 
 /* work grid section */
-
 /* about me */
 
 .about img{
