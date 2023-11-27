@@ -1,9 +1,15 @@
 /*=========================================================
+
+:root{
+	--darkblue:hsl(229,74%,18%);
+	--brightblue:#1cf;
+	--pinkpurple:rgb(242, 149, 248);
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
 	.nav-container li:hover {
-		box-shadow: 0px 6px 0px 0px #1cf;
+		box-shadow: 0px 6px 0px 0px var(--brightblue);
 	}
 
 /* text css above hero image*/
@@ -38,11 +44,11 @@
 	top: 20%;
 	left: -10px;
 	/* transform: translate(-50%, -50%); */
-	box-shadow: 0px 10px 30px #1cf	;
+	box-shadow: 0px 10px 30px var(--brightblue);
 }
 
 .hero-container:hover{
-	box-shadow: 0px 10px 30px #1cf	;
+	box-shadow: 0px 10px 30px var(--brightblue);
 	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.859);
 }
 .hero_title {
