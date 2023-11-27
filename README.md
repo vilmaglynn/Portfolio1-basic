@@ -9,7 +9,10 @@ Very basic website and only created with HTML and CSS.
 
 ## Usage
 
+Link to deployed page
 https://vilmaglynn.github.io/portfolio1-basic/
+
+
 ![portfolio](./assets/portfolioview.png)
 
 ## License
