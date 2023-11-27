@@ -2,7 +2,7 @@
 Created with HTML CSS only
 
 
-    ![portfolio image](./assets/portfolioview.png)
+    ![portfolio](../portfolio1-basic/assets/portfolioview.png)
 
 
 ## Description
